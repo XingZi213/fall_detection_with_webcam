@@ -1,7 +1,8 @@
-first using 
+
+1.	
 npm install
 
-and then using 
+2. 
 npm start
 
 
