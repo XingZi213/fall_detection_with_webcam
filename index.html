@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+       <nav class="navbar navbar-expand-lg navbar navbar-dark">
+         <div class="container-fluid">
+           <a class="navbar-brand"><img src="images/logo.png"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./about.html">About us</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./detection.html">Detection</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+	   <div class="content">
+		   	<div class="ls">
+		   		<div class="inner">
+		   			<h1>State-of-the-art</h1>
+					<h1><span style="color:#1F78E7;font-weight:bold"> Fall detection</span>   System</h1>
+					<p>Nowadays, people are increasingly concerned about the safety of themselves or their families. One of the most important problems that they are concerned about is the potential danger caused by accidental falls. When someone suddenly falls in a private place like a room, if not detected in time this may result in serious consequences or even death. However, for the existing fall detection methods, most of the research or products are based on portable wearable sensor detection. This not only brings inconvenience in detection, but also cannot be widely used in people's daily life because the devices are expensive. Therefore, in this project, we will build a solution with a broader range of applications by using a monocular camera with neural network of computer vision. The solution will be based on the latest YOLO target detection algorithm combined with human posture and bone detection to better identify fall actions. When a fall is detected as "Ture", the system will enter a countdown time and if the fallen person does not take further action (e.g., does not get up, does not check for injuries), the system will determine it as a severe fall, which will trigger an alarm and notify the system backend personnel. We will develop a backend interactive interface to detect people within the camera's view in real time and ensure their safety. </p>
+					<div class="btn">
+						<a href="./detection.html"><button type="button" class="btn btn-primary">Start Detection</button></a>
+					</div>
+
+				</div>
+		   	</div>
+		   	<div class="rs">
+		   		<img src="images/2.png">
+		   	</div>
+		   	
+		   	<div style="clear:both;"></div>
+			
+	   </div>
+	   <footer>
+	   	<h3 style="margin-top:15px;">Fall Detection</h3>
+	   	<p style="margin-top:10px;">University of Technology Sydney | Autumn 2022 </p>
+	   </footer>
+    </body>
+	<style>
+		.navbar{
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		.navbar.navbar-expand-lg.navbar.navbar-dark{
+			background-color: #3A3D45;
+		}
+		
+		.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
+			background-color: #FFFFFF;
+			color: #78ACFF;
+			font-weight: bold;
+			
+		}
+		.container-fluid{
+			padding-right: 0;
+		}
+		
+		.navbar-nav .nav-link{
+			background-color: #384C63;
+			width: 150px;
+			text-align: center;
+			font-size: 16px;
+		}
+		
+		.content {
+			background-color: white;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment:fixed;
+			z-index:-10;
+			width: 100%;
+		}
+		
+		.content .ls {
+			width:50%;
+			float: left;
+			position: relative;
+		}
+		
+		.content .rs{
+			width:50%;
+			height:auto;
+			overflow:hidden;
+		}
+		
+		.content .ls .inner{
+		  padding-top: 40px;
+		  margin: 0 auto;
+		  width: 80%;
+		  height:500px;
+		}
+		
+		.content .inner p{  
+		  font-family: arial;
+		  font-size: 16px; 
+		  width: 100%;
+		  
+		  word-wrap: break-word;
+		  height: auto;
+		}
+		
+		.content .inner h1{
+			color:black;
+			font-weight:bold;
+		}
+		
+		.content .inner .btn{
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+
+		.content .rs img{
+			margin-top: 25%;
+			height:500px;
+			background:white;
+			
+		}
+		
+		footer{
+		  width:100%;
+		  margin:0px auto;
+		  margin-top:80px;
+		  text-align:center;
+		  background:#3A3D45;
+		  color:white;
+		  height:80px;
+		}
+		
+		footer p{
+		  font-size:12px;
+		}
+		
+		.navbar-brand img{
+			height: 30px;
+			width: 30px;
+		}
+		
+	</style>
+</html>
+
